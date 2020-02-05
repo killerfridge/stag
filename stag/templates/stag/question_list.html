@@ -1,0 +1,28 @@
+{% extends 'components/base.html' %}
+
+{% block content %}
+    <div class="container">
+    <h1>Questions Asked</h1>
+        <button type="button" class="btn btn-primary" data-total="modal" data-target="#askAQuestion">
+            Ask a Question
+        </button>
+        <div class="row row-cols-4">
+        {% for question in question_list %}
+            <div class="card col" style="width: 18rem">
+                <div class="card-body">
+                    <h5 class="card-title">{{ question.title }}</h5>
+                    <h6 class="card-title">Asked {{ question.created_on|timesince }} ago</h6>
+                    {% for category in question.categories.all %}
+                        <a href="#" class="card-link">#{{ category }}</a>
+                    {% endfor %}<br>
+                    <p class="card-text">{{ question.question|truncatechars:20 }}</p>
+                </div>
+                <div class="card-footer">
+                    <a class="card-link" href="#">Answer</a>
+                    <a class="card-link" href="#">View Responses ({{ question.comment_set.count }})</a>
+                </div>
+            </div>
+        {% endfor %}
+        </div>
+    </div>
+{% endblock %}

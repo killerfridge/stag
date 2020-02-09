@@ -1,0 +1,19 @@
+{% extends 'components/base.html' %}
+
+{% load static %}
+
+{% block content %}
+    <div class="container text-center pt-5 align-middle" style="height:90vh; display: table;">
+        <div style="display: table-cell; vertical-align: middle;">
+            <div class="load">
+                <h1>Jonathan Bleasby</h1>
+            </div>
+            <div class="load-2">
+                <h5>StagMan</h5>
+            </div>
+            <div class="load-3">
+                <a role="button" class="btn btn-secondary" href="{% url 'stag:questions' %}">Enter</a>
+            </div>
+        </div>
+    </div>
+{% endblock %}

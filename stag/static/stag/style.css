@@ -1,0 +1,56 @@
+/* Animations */
+
+div.load{
+    -webkit-animation: 2s linear 0s fadein; /* Safari, Chrome and Opera > 12.1 */
+            animation: 2s linear 0s fadein;
+}
+
+div.load-2{
+    -webkit-animation: 4s linear 0s fadein-2; /* Safari, Chrome and Opera > 12.1 */
+            animation: 4s linear 0s fadein-2;
+}
+
+div.load-3{
+    -webkit-animation: 6s linear 0s fadein-3; /* Safari, Chrome and Opera > 12.1 */
+            animation: 6s linear 0s fadein-3;
+}
+
+div.load-quick{
+    -webkit-animation: 500ms linear 0s fadein; /* Safari, Chrome and Opera > 12.1 */
+            animation: 500ms linear 0s fadein;
+}
+
+@keyframes fadein-3 {
+    0% { opacity: 0; }
+    75% { opacity: 0; }
+    100%   { opacity: 1; }
+}
+
+@-webkit-keyframes fadein-3 {
+    0% { opacity: 0; }
+    75% { opacity: 0; }
+    100%   { opacity: 1; }
+}
+
+@keyframes fadein-2 {
+    0% { opacity: 0; }
+    50% { opacity: 0; }
+    100%   { opacity: 1; }
+}
+
+@-webkit-keyframes fadein-2 {
+    0% { opacity: 0; }
+    50% { opacity: 0; }
+    100%   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}

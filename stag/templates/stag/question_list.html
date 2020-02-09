@@ -1,14 +1,40 @@
 {% extends 'components/base.html' %}
 
-{% block content %}
+{% block fadein %}
     <div class="container">
-    <h1>Questions Asked</h1>
-        <button type="button" class="btn btn-primary" data-total="modal" data-target="#askAQuestion">
+        <h1>Questions Asked</h1>
+        Ask a Question about our dear leader and the stage events. You can also answer anyone else's questions,
+        or view answers that other people have given.<br>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#askAQuestion">
             Ask a Question
         </button>
-        <div class="row row-cols-4">
+
+        <div class="modal fade" id="askAQuestion" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+                <form method="get">
+                    <div class="modal-body">
+
+                    This is where the ask a question goes.
+
+                    </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary">Post Question</button>
+                  </div>
+                </form>
+            </div>
+          </div>
+        </div>
+        <div class="card-columns">
         {% for question in question_list %}
-            <div class="card col" style="width: 18rem">
+            <div class="card">
                 <div class="card-body">
                     <h5 class="card-title">{{ question.title }}</h5>
                     <h6 class="card-title">Asked {{ question.created_on|timesince }} ago</h6>

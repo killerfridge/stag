@@ -1,0 +1,29 @@
+{% extends 'components/base.html' %}
+
+{% block fadein %}
+
+<div class="row row-cols-1 row-cols-md-2">
+    <div class="col mb-4">
+    {% for question in question_list %}
+        <div class="card {% if question in voted %}bg-success text-white{% endif %} mb-3">
+            <div class="card-body">
+                <h5 class="card-text">{{ question.title }}</h5>
+                <p class="card-text">{{ question.body }}</p>
+
+            </div>
+            <div class="card-footer">
+                <p class="card-text">
+                    <small class="{% if question in voted %}text-white{% else %}text-muted{% endif %}">
+                        Last modified: {{ question.modified }}
+                        {% if question in voted %}
+                            <p class="cart-text">You have already voted on this question</p>
+                        {% endif %}
+                    </small>
+                </p>
+            </div>
+        </div>
+    {% endfor %}
+    </div>
+</div>
+
+{% endblock %}

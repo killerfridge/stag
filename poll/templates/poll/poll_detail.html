@@ -1,0 +1,10 @@
+{% extends 'components/base.html' %}
+
+{% block fadein %}
+    {{ question.title }}
+    {{ question.body }}
+    
+    {% for answer in question.answer_set.all %}
+        {{ answer.choice }}
+    {% endfor %}
+{% endblock %}

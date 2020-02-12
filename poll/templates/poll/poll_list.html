@@ -5,7 +5,7 @@
 <div class="row row-cols-1 row-cols-md-2">
     <div class="col mb-4">
     {% for question in question_list %}
-        <a href="{{ question.get_absolute_url }}">
+        <a class="card-main" href="{{ question.get_absolute_url }}">
         <div class="card {% if question in voted %}bg-success text-white{% endif %} mb-3">
             <div class="card-body">
                 <h5 class="card-text">{{ question.title }}</h5>

@@ -1,5 +1,16 @@
-/* Animations */
+a.card-main:hover{
+    background: sandybrown;
+    color:black;
+    text-decoration: none;
+}
+a.card-main:link{
+    color:black;
+}
+a.card-main:visited{
+    color:black;
+}
 
+/* Animations */
 div.load{
     -webkit-animation: 2s linear 0s fadein; /* Safari, Chrome and Opera > 12.1 */
             animation: 2s linear 0s fadein;

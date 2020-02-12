@@ -11,6 +11,7 @@ class Question(models.Model):
     body = models.TextField()
     created = models.DateTimeField(editable=False)
     modified = models.DateTimeField(blank=True)
+    multiple_choices = models.BooleanField(default=False)
 
     def save(self, *args, **kwargs):
         """On save, update the timestamps"""
@@ -48,4 +49,3 @@ class Answer(models.Model):
 
     votes = property(_votes)
 
-    # TODO create a query within the model to return the number of votes

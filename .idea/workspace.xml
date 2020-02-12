@@ -2,15 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="effe7579-4ab5-4560-a570-7f48a0654e35" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/poll/templates/poll/poll_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/max_stag.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/max_stag.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/max_stag/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/max_stag/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/poll/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/poll/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poll/templates/poll/poll_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/poll/templates/poll/poll_detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/poll/templates/poll/poll_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/poll/templates/poll/poll_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/poll/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/poll/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/poll/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/poll/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stag/static/stag/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/stag/static/stag/style.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -96,7 +92,7 @@
       <workItem from="1580911923708" duration="10708000" />
       <workItem from="1580994824005" duration="10902000" />
       <workItem from="1581092459669" duration="344000" />
-      <workItem from="1581349340604" duration="1271000" />
+      <workItem from="1581349340604" duration="5298000" />
     </task>
     <servers />
   </component>
